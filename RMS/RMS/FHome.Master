@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="FHome.master.cs" Inherits="RMS.FHome" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    
+    <style>
+        h1{
+            font-size:150%;
+        }
+        .auto-style{
+            width:850px;
+        }
+        .auto-style1 {
+            height: 148px;
+        }
+        </style>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div>
+        <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+        <table>
+                <tr style="background-color:aquamarine">
+                    <td>
+                        <h1>
+                            <asp:Label ID="lbl1" runat="server" Text="Restaurent Management"></asp:Label>
+                            &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</h1>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="auto-style1">
+                        <asp:Menu ID="Menu1" Orientation="Horizontal" Height="30px" Width="1350" BackColor="#333300" StaticMenuItemStyle-HorizontalPadding="100px" StaticMenuItemStyle-ForeColor="White" runat="server">
+                            <Items>
+                                <asp:MenuItem Selected="true" NavigateUrl="~/FHome.aspx" Text="Home"></asp:MenuItem>
+                                <asp:MenuItem Selected="true" NavigateUrl="~/FFastFood.aspx" Text="FoodCorner"></asp:MenuItem>
+                             <asp:MenuItem Selected="true" NavigateUrl="~/UserProfile.aspx" Text=" Order List"></asp:MenuItem>   
+                                <asp:MenuItem Selected="true" NavigateUrl="~/ULogout.aspx" Text=" Logout"></asp:MenuItem>    
+                            </Items>
+                        </asp:Menu>
+                        <br></br>
+                       
+                        
+                        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <Center><asp:Image ID="Image1" runat="server" Height="500px" Width="1000px" ImageUrl="Image/img%20(2).jpg" />" /></Center>
+                        <br>
+                       
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        <br />
+                        </br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <asp:Menu ID="Menu2" Orientation="Horizontal" Height="30px" Width="1350" BackColor="#333300" StaticMenuItemStyle-HorizontalPadding="100px" StaticMenuItemStyle-ForeColor="White"  runat="server">
+                            <Items>
+                                  <asp:MenuItem Selected="true"  Text="@ Copy Right 2017"></asp:MenuItem>
+                                <asp:MenuItem Selected="true"  Text="Phone :01751879214"></asp:MenuItem>
+                                <asp:MenuItem Selected="true" Text="A"></asp:MenuItem>
+                            
+                            </Items>
+                        </asp:Menu>
+                    </td>
+                </tr>
+            </table>
+        </asp:ContentPlaceHolder>
+    </div>
+    </form>
+</body>
+</html>
